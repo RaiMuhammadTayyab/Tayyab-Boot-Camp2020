@@ -31,5 +31,5 @@ jobs:
     - name: installing surge
       run: npm install --global surge
     - name: working through surge
-    - run : surge./FirstAssingment.surge.sh--token ${{Secrets.Rai Muhammad Osaid}} 
-        
+    - run : surge./ first_assingment.surge.sh--token ${{Secrets.Rai_Osaid}} 
+         
