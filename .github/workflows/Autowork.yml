@@ -23,13 +23,13 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: installing nodejs
-    - uses: actions/setup-node@v2-beta
+    - use: actions/setup-node@v2-beta
       with:
         node-version: 12  
 
     # Runs a set of commands using the runners shell
     - name: installing surge
-      uses: npm install --global surge
+      use: npm install --global surge
     - name: working through surge
-    - uses: surge ./sudden-jelly.surge.sh--token $ {{Secrets.RAI_OSAID}} 
+    - run: surge ./sudden-jelly.surge.sh--token $ {{Secrets.RAI_OSAID}} 
           
